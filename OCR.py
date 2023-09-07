@@ -2,6 +2,9 @@ from paddleocr import PaddleOCR
 import cv2
 import numpy as np
 from PIL import Image
+import os
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 def paddleocr(image):
     # ocr = PaddleOCR(use_gpu=False, det_model_dir='path_to_ch_PP-OCRv3_xx_model')
