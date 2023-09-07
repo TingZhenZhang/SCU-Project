@@ -3,6 +3,9 @@ import numpy as np
 from keras.models import load_model
 from PIL import Image
 from io import BytesIO
+import os
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 labels = {
     0: 'bawan',
